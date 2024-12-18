@@ -6,7 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Doctrine\ORM\EntityManagerInterface;
-
+use App\Entity\Formation;
+use App\Entity\Formateur;
 class DebugController extends AbstractController
 {
     #[Route('/debug', name: 'app_debug')]

@@ -8,8 +8,9 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 <script>
-    console.log({{formations}})
-    console.log({{formateurs}})
+    {% for formation in formations %}
+        console.log({{ formation.getNom() }});
+    {% endfor %}
 </script>
 <div class="example-wrapper">
     <h1>Hello {{ controller_name }}! ✅</h1>
