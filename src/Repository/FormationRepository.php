@@ -2,22 +2,22 @@
 
 namespace App\Repository;
 
-use App\Entity\Formations;
+use App\Entity\Formation;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Formations>
+ * @extends ServiceEntityRepository<Formation>
  */
-class FormationsRepository extends ServiceEntityRepository
+class FormationRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Formations::class);
+        parent::__construct($registry, Formation::class);
     }
 
 //    /**
-//     * @return Formations[] Returns an array of Formations objects
+//     * @return Formation[] Returns an array of Formation objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -31,7 +31,7 @@ class FormationsRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?Formations
+//    public function findOneBySomeField($value): ?Formation
 //    {
 //        return $this->createQueryBuilder('f')
 //            ->andWhere('f.exampleField = :val')

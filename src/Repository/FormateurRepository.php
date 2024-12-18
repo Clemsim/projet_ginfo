@@ -2,22 +2,22 @@
 
 namespace App\Repository;
 
-use App\Entity\Formateurs;
+use App\Entity\Formateur;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Formateurs>
+ * @extends ServiceEntityRepository<Formateur>
  */
-class FormateursRepository extends ServiceEntityRepository
+class FormateurRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Formateurs::class);
+        parent::__construct($registry, Formateur::class);
     }
 
 //    /**
-//     * @return Formateurs[] Returns an array of Formateurs objects
+//     * @return Formateur[] Returns an array of Formateur objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -31,7 +31,7 @@ class FormateursRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?Formateurs
+//    public function findOneBySomeField($value): ?Formateur
 //    {
 //        return $this->createQueryBuilder('f')
 //            ->andWhere('f.exampleField = :val')
